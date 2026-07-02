@@ -1,0 +1,36 @@
+{
+    "title": "App Store & Google Play Sentiment Analyzer Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "appId": {
+            "title": "App ID",
+            "type": "string",
+            "description": "Google Play ID (e.g., com.whatsapp) or Apple App Store ID (e.g., 310633997). Note: If using App Store, you can also pass the full URL.",
+            "editor": "textfield",
+            "default": "com.whatsapp",
+            "prefill": "com.whatsapp"
+        },
+        "platform": {
+            "title": "Store Platform",
+            "type": "string",
+            "description": "Select the platform to scrape reviews from.",
+            "editor": "select",
+            "enum": ["google-play", "app-store"],
+            "enumTitles": ["Google Play Store", "Apple App Store"],
+            "default": "google-play",
+            "prefill": "google-play"
+        },
+        "maxReviews": {
+            "title": "Max Reviews",
+            "type": "integer",
+            "description": "Maximum number of reviews to extract.",
+            "editor": "number",
+            "minimum": 1,
+            "maximum": 5000,
+            "default": 100,
+            "prefill": 100
+        }
+    },
+    "required": ["appId", "platform"]
+}

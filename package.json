@@ -1,0 +1,15 @@
+{
+  "name": "app-store-sentiment-analyzer",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node src/main.js"
+  },
+  "dependencies": {
+    "apify": "^3.5.3",
+    "app-store-scraper": "*",
+    "google-play-scraper": "*",
+    "sentiment": "*"
+  }
+}
