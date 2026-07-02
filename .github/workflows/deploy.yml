@@ -12,8 +12,6 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Apify Actor Deploy
-        uses: apify/github-action-deploy-actor@v1.2.0
+        uses: apify/push-actor-action@master
         with:
-          version: 1.0.0
-        env:
-          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          token: ${{ secrets.APIFY_TOKEN }}
