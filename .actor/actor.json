@@ -3,7 +3,7 @@
     "name": "app-store-sentiment-analyzer",
     "title": "App Store & Google Play Sentiment Analyzer",
     "description": "Extract reviews from Google Play & App Store and automatically calculate sentiment scores (Positive/Negative/Neutral).",
-    "version": "1.0.0",
+    "version": "0.0",
     "input": "./input_schema.json",
     "dockerfile": "../Dockerfile",
     "minMemoryMbytes": 512,
