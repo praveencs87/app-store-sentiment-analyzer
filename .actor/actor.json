@@ -20,5 +20,18 @@
             "pricePerEvent": 0.0015,
             "description": "Charged per review extracted and analyzed"
         }
-    ]
+    ],
+    "isPublic": true,
+    "seoTitle": "App Store & Google Play Sentiment Analyzer | Apify Actor",
+    "seoDescription": "Extract reviews from Google Play & App Store and automatically calculate sentiment scores (Positive/Negative/Neutral).",
+    "categories": [
+        "BUSINESS",
+        "DATA_EXTRACTION",
+        "LEAD_GENERATION"
+    ],
+    "defaultRunOptions": {
+        "build": "latest",
+        "timeoutSecs": 1800,
+        "memoryMbytes": 256
+    }
 }
