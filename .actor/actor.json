@@ -1,42 +1,45 @@
 {
-    "actorSpecification": 1,
-    "name": "app-store-sentiment-analyzer",
-    "title": "App Store & Google Play Sentiment Analyzer",
-    "description": "Extract reviews from Google Play & App Store and automatically calculate sentiment scores (Positive/Negative/Neutral).",
-    "version": "0.0",
-    "input": "./input_schema.json",
-    "dockerfile": "../Dockerfile",
-    "minMemoryMbytes": 1024,
-    "maxMemoryMbytes": 4096,
-    "pricingModel": "PAY_PER_EVENT",
-    "pricingEvents": [
-        {
-            "eventName": "apify-actor-start",
-            "pricePerEvent": 0.00005,
-            "description": "Charged once when Actor starts"
-        },
-        {
-            "eventName": "review-analyzed",
-            "pricePerEvent": 0.0015,
-            "description": "Charged per review extracted and analyzed"
-        },
-        {
-            "eventName": "lead-extracted",
-            "pricePerEvent": 0.005,
-            "description": "Charged per lead extracted"
-        }
-    ],
-    "isPublic": true,
-    "seoTitle": "App Store & Google Play Sentiment Analyzer | Apify Actor",
-    "seoDescription": "Extract reviews from Google Play & App Store and automatically calculate sentiment scores (Positive/Negative/Neutral).",
-    "categories": [
-        "BUSINESS",
-        "DATA_EXTRACTION",
-        "LEAD_GENERATION"
-    ],
-    "defaultRunOptions": {
-        "build": "latest",
-        "timeoutSecs": 1800,
-        "memoryMbytes": 4096
+  "actorSpecification": 1,
+  "name": "app-store-sentiment-analyzer",
+  "title": "App Store & Google Play Sentiment Analyzer",
+  "description": "Extract reviews from Google Play & App Store and automatically calculate sentiment scores (Positive/Negative/Neutral).",
+  "version": "0.0",
+  "input": "./input_schema.json",
+  "dockerfile": "../Dockerfile",
+  "minMemoryMbytes": 1024,
+  "maxMemoryMbytes": 4096,
+  "pricingModel": "PAY_PER_EVENT",
+  "pricingEvents": [
+    {
+      "eventName": "apify-actor-start",
+      "pricePerEvent": 0.00005,
+      "description": "Charged once when Actor starts"
+    },
+    {
+      "eventName": "review-analyzed",
+      "pricePerEvent": 0.0015,
+      "description": "Charged per review extracted and analyzed"
+    },
+    {
+      "eventName": "lead-extracted",
+      "pricePerEvent": 0.005,
+      "description": "Charged per lead extracted"
     }
+  ],
+  "isPublic": true,
+  "seoTitle": "App Store & Google Play Sentiment Analyzer | Apify Actor",
+  "seoDescription": "Extract reviews from Google Play & App Store and automatically calculate sentiment scores (Positive/Negative/Neutral).",
+  "categories": [
+    "BUSINESS",
+    "DATA_EXTRACTION",
+    "LEAD_GENERATION"
+  ],
+  "defaultRunOptions": {
+    "build": "latest",
+    "timeoutSecs": 1800,
+    "memoryMbytes": 4096
+  },
+  "storages": {
+    "dataset": "./dataset_schema.json"
+  }
 }
