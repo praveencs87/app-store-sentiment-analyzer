@@ -1,3 +1,4 @@
+import { armKillSwitch, disarmKillSwitch } from './utils/timeoutManager.js';
 import { Actor } from 'apify';
 import gplay from 'google-play-scraper';
 import appStore from 'app-store-scraper';
